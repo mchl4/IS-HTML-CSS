@@ -693,7 +693,7 @@
     gap: 11rem;
     margin-top: 10rem;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
   }
   .updateBanner .updateBanner__wrapper .updateBanner__left p{
     margin-bottom: 2rem;
@@ -704,18 +704,25 @@
 
   /* UPDATE SECTION 2 */
 .updatesec2{
-  padding: 10rem 0;
   background-color: var(--clr-light);
+}
+.updatesec2 .updatesec2__wrapper{
+  display: flex;
 }
 .updatesec2 .updatesec2__cards{
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   flex-wrap: wrap;
+
+ 
 }
-.updatesec2 .updatesec2__title{
+/* .updatesec2__left{
   display: flex;
-  gap: 60rem;
-}
+  gap: 3rem;
+  width: 70%;
+  flex-direction: row;
+} */
+
 .updatesec2 .updatesec2__wrapper .updatesec2__left .updatesec2__title h2{
   color: var(--clr-secondary);
   font-size: 3.5rem;
@@ -723,11 +730,10 @@
   margin-bottom: 3rem;
 }
 .updatesec2 .updatesec2__wrapper .updatesec2__left .updatesec2__card{
-  max-width: 40rem;
-  background-color: rgba(0, 0, 0, 0.24);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  height: 29rem;
-  width: 40rem;
+  max-width: 38rem;
+    background-color: rgba(0, 0, 0, 0.24);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
 }
 .updatesec2 .updatesec2__wrapper .updatesec2__card .updatesec2__details{
   padding: 3rem;
@@ -746,21 +752,23 @@
 .updatesec2 .updatesec2__wrapper .updatesec2__left .updatesec2__card .updatesec2__icon{
   display: flex;
   justify-content: flex-end;
-  padding: 1rem;
+  padding: 2rem;
   margin-right: 2rem;
 } 
 .updatesec2 .updatesec2__wrapper .updatesec2__left .updatesec2__card .updatesec2__icon i{
   max-width: 40rem;
 }
-.updatesec2 .updatesec2__wrapper .updatesec2__right {
-  display: flex;
-}
 
 .updatesec2__right{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  text-align: justify;
 }
+
+
 .updatesec2__right .updatesec2__title__right{
+  display: flex;
+  justify-content: space-between;
   color: var(--clr-secondary);
   font-size: 3.5rem;
   font-weight: 700;
@@ -769,16 +777,25 @@
 .updatesec2__right .updatesec2__categories{
   display:flex;
   justify-content: space-between;
+  gap: 6rem;
+  flex-wrap: wrap;
 }
-
-.updatesec2__right .updatesec2__lists li {
-  font-size: 1.9rem;
+.update__lists{
+  display: flex;
+  text-align: justify;
+}
+.updatesec2__lists tr{
+  display: flex;
+  text-align: justify;
+  gap: 17rem;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
-.updatesec2__lists li {
-  margin-bottom: 2rem;
-}
+
+
 
 /* UPDATE SECTION 3 */
 .updatesec3{
@@ -793,7 +810,18 @@
   font-size: 3.5rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: rem;
+  margin-bottom: 3rem;
+}
+.updatesec3__img{
+  display: flex;
+  
+}
+.updatesec3__img .updatesec3__item{
+  display: flex;
+  flex-direction: column;
+}
+.updatesec3__img .updatesec3__item i p{
+  display: flex;
 }
 
 .updatesec3 .updatesec3__wrapper .updatesec3__img .updatesec3__item{
@@ -807,8 +835,22 @@
 }
 
 
+/* CONTACTS */
+
+.contacts{
+  background-color: var(--clr-light);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 30rem;
+    display: flex;
+    align-items: flex-start;
+    text-align:left
+}
+.contacts .contacts__wrapper{
 
 
+}
 
 
 
